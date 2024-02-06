@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    height: 80vh;
+  }
+  
+  .leftDiv {
+    position: absolute;
+    padding: 10px;
+    border: 1px solid #242424;
+    
+  }
+
+
+  .rightDiv {
+    margin-top: 200px;
+    position: absolute;
+    padding: 10px;
+    border: 1px solid #242424;
+    
+  }
+
+  .box {
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+    margin-top: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease; /* Animating opacity */
+  }
+
+  .box.appear {
+    opacity: 1;
+  }
+  
+
+  .nav {
+    display: flex;
+  }
+  
+  .nav div {
+    margin-right: 20px; /* Adjust spacing between text items */
+  }
+
+
