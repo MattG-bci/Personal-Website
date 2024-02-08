@@ -4,7 +4,8 @@
     align-items: center;
     text-align: center;
     padding: 20px;
-    height: 80vh;
+    height: 60vh;
+    padding-bottom: 500px;
   }
   
   .leftDiv {
@@ -45,4 +46,42 @@
     margin-right: 20px; /* Adjust spacing between text items */
   }
 
+  .header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  .title {
+    border-bottom: 1px solid currentColor;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 60vh;
+  }
+
+  .profile-pic {
+    border: 3px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    width: 550px;
+    height: 450px;
+  }
+
+  .about-description {
+    border: 1px;
+    border-color: aliceblue;
+    border-style: none;
+    width: 600px;
+  }
+
+  .description {
+    font-size: 22px;
+  }
+
+  
 

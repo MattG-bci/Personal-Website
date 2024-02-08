@@ -3,6 +3,7 @@ import Message from "./components/Message";
 import NavBar from "./components/Navbar";
 import styled from "styled-components";
 import ScrollToBottom from 'react-scroll-to-bottom';
+import About from "./components/About";
 import "./styles.css";
 
 
@@ -14,16 +15,13 @@ function App() {
   return (
     <>
       <ScrollToBottom>
-        <div className="nav">
-          <div><h3>About</h3></div>
-          <div><h3>Background</h3></div>
-          <div><h3>Projects</h3></div>
-          <div><h3>Blog</h3></div>
-          <div><h3>Contact</h3></div>
-        </div>
+        <NavBar />
         <div className="container">
           <Message />
         </div>
+        <>
+        <About />
+        </>
       </ScrollToBottom>
     </>
   );
