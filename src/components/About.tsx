@@ -15,7 +15,7 @@ const About = () => {
                 <div className="about-description">
                     <p className="description">I am a recent MSc Applied Machine Learning gradutate from Imperial College London.</p>
                     <p className="description">Experianced in developing machine learning algorithms for various fields ranging from medical imaging to autonomous driving.</p>
-                    <p className="description">Currently looking for opportunities remote or in London, UK.</p>
+                    <p className="description">Currently looking for remote opportunities or in London, UK.</p>
                 </div>
             </div>
         </div>

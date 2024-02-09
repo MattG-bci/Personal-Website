@@ -5,6 +5,7 @@ import styled from "styled-components";
 import ScrollToBottom from 'react-scroll-to-bottom';
 import About from "./components/About";
 import "./styles.css";
+import Component from "./components/Background";
 
 
 const NextPage = styled.div`
@@ -20,7 +21,10 @@ function App() {
           <Message />
         </div>
         <>
-        <About />
+          <About />
+        </>
+        <>
+          <Component />
         </>
       </ScrollToBottom>
     </>
