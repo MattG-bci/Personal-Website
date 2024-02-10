@@ -1,65 +1,94 @@
 import * as React from 'react';
-import Timeline from '@mui/lab/Timeline';
-import TimelineItem from '@mui/lab/TimelineItem';
-import TimelineSeparator from '@mui/lab/TimelineSeparator';
-import TimelineConnector from '@mui/lab/TimelineConnector';
-import TimelineContent from '@mui/lab/TimelineContent';
-import TimelineDot from '@mui/lab/TimelineDot';
-import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
-import { Typography } from '@mui/material';
+import "./Background.css";
 
-export default function Component() {
+export default function Background() {
   return (
-    <div>
+
+    <div className="background-container">
         <div className="header">
             <h1 className="title">Background</h1>
         </div>
-        <Timeline position="alternate">
-        <TimelineItem>
-            <TimelineOppositeContent
-                align="right"
-                color="white"
-                >
-                9:30 am
-            </TimelineOppositeContent>
-            <TimelineSeparator>
-            <TimelineDot />
-            <TimelineConnector />
-            </TimelineSeparator>
-            <TimelineContent>Eat</TimelineContent>
-        </TimelineItem>
-        <TimelineItem>
-            <TimelineSeparator>
-            <TimelineDot />
-            <TimelineConnector />
-            </TimelineSeparator>
-            <TimelineContent>          
-                <Typography variant="h5" component="span">
-                    Code
-                </Typography>
-            </TimelineContent>
-        </TimelineItem>
-        <TimelineItem>
-            <TimelineSeparator>
-            <TimelineDot />
-            <TimelineConnector />
-            </TimelineSeparator>
-            <TimelineContent>Sleep</TimelineContent>
-        </TimelineItem>
-        <TimelineItem>
-            <TimelineOppositeContent
-                align="right"
-                color="white"
-                >
-                September 2019
-            </TimelineOppositeContent>
-            <TimelineSeparator>
-            <TimelineDot />
-            </TimelineSeparator>
-            <TimelineContent>Moving to UK, starting BEng Biomedical Engineering</TimelineContent>
-            
-        </TimelineItem>
-        </Timeline>
-    </div>
+        <div className="timeline">
+            <div className="event">
+                <div className="dot"></div>
+                <div className="content">
+                    <div className="img-container">
+                        <img src="src/assets/sheffield.jpeg" height="60" width="60" alt="Sheffield"></img>
+                    </div>
+                    <div className="date">September 2019</div>
+                    <div className="title">Moving to UK to study</div>
+                    <div className="desc">Starting BEng Bioengineering at University of Sheffield.</div>
+                </div>
+            </div>
+            <div className="event">
+                <div className="dot"></div>
+                <div className="content">
+                    <div className="img-container">
+                        <img src="src/assets/sela.jpeg" height="60" width="60" alt="SELA"></img>
+                    </div>
+                    <div className="date">May 2020</div>
+                    <div className="title">Joining SELA</div>
+                    <div className="desc">Joined Sheffield Engineering Leadership Academy (SELA), a programme for engineering students to develop soft skills such as communication and leadership.</div>
+                </div>
+            </div>
+            <div className="event">
+                <div className="dot"></div>
+                <div className="content">
+                    <div className="img-container">
+                        <img src="src/assets/insigneo.jpeg" height="60" width="60" alt="Insigneo"></img>
+                    </div>
+                    <div className="date">June 2022</div>
+                    <div className="title">Internship at Insigneo Institute</div>
+                    <div className="desc">Description of Event 3 goes here.</div>
+                </div>
+            </div>
+            <div className="event">
+                <div className="dot"></div>
+                <div className="content">
+                    <div className="img-container">
+                        <img src="src/assets/sheffield.jpeg" height="60" width="60" alt="Sheffield Grad"></img>
+                    </div>
+                    <div className="date">July 2022</div>
+                    <div className="title">Graduating with 1st Class Honours</div>
+                    <div className="desc">Description of Event 4 goes here.</div>
+                </div>
+            </div>
+            <div className="event">
+                <div className="dot"></div>
+                <div className="content">
+                    <div className="img-container">
+                        <img src="src/assets/imperial.png" height="60" width="60" alt="Imperial"></img>
+                    </div>
+                    <div className="date">October 2022</div>
+                    <div className="title">MSc at Imperial College London</div>
+                    <div className="desc">Description of Event 4 goes here.</div>
+                </div>
+            </div>
+            <div className="event">
+                <div className="dot"></div>
+                <div className="content">
+                    <div className="img-container">
+                        <img src="src/assets/fusionride.jpeg" height="60" width="60" alt="Fusionride"></img>
+                    </div>
+                    <div className="date">June 2023</div>
+                    <div className="title">Internship at Fusionride</div>
+                    <div className="desc">Description of Event 4 goes here.</div>
+                </div>
+            </div>
+            <div className="event">
+                <div className="dot"></div>
+                <div className="content">
+                    <div className="img-container">
+                        <img src="src/assets/imperial.png" height="60" width="60" alt="Imperial Grad"></img>
+                    </div>
+                    <div className="date">October 2023</div>
+                    <div className="title">Graduating ICL with Distinction</div>
+                    <div className="desc">Description of Event 4 goes here.</div>
+                </div>
+            </div>
+        </div>
+  </div>
+
   );
 }
+

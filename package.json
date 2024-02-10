@@ -21,6 +21,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.0",
     "react-scroll-to-bottom": "^4.2.0",
+    "react-timeless": "^0.3.1",
     "styled-components": "^6.1.8"
   },
   "devDependencies": {

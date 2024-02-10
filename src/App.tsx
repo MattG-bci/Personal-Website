@@ -5,12 +5,9 @@ import styled from "styled-components";
 import ScrollToBottom from 'react-scroll-to-bottom';
 import About from "./components/About";
 import "./styles.css";
-import Component from "./components/Background";
+import Background from "./components/Background";
+import Projects from "./components/Projects";
 
-
-const NextPage = styled.div`
-  margin-top: 200vh; /* Ensure this content appears below the viewport */
-`;
 
 function App() {
   return (
@@ -20,12 +17,15 @@ function App() {
         <div className="container">
           <Message />
         </div>
-        <>
+        <div className="about-container">
           <About />
-        </>
-        <>
-          <Component />
-        </>
+        </div>
+        <div className="background-container">
+          <Background />
+        </div>
+        <div>
+          <Projects />
+        </div>
       </ScrollToBottom>
     </>
   );
