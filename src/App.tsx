@@ -13,10 +13,7 @@ function App() {
   return (
     <>
       <ScrollToBottom>
-        <NavBar />
-        <div className="container">
-          <Message />
-        </div>
+        <Message />
         <div className="about-container">
           <About />
         </div>

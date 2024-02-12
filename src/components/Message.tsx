@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled, { keyframes } from "styled-components";
+import NavBar from './Navbar';
 
 export default function TextAnimation() {
     const [isFirstAnimationFinished, setIsFirstAnimationFinished] = useState(false);
@@ -9,10 +10,15 @@ export default function TextAnimation() {
     };
 
     return (
-        <div>
-        <Greetings onAnimationEnd={handleAnimationEnd} />
-        {isFirstAnimationFinished && <Introduction />}
-      </div>)
+        <div className="outer-1">
+            <img src="src/assets/nn.gif" alt="tenor" className="gif-overlay" />
+            <div className="content-overlay">
+            <NavBar/ >
+            <Greetings onAnimationEnd={handleAnimationEnd} />
+            {isFirstAnimationFinished && <Introduction />}
+            </div>
+        </div>
+      )
 }
 
 const animation = keyframes`
