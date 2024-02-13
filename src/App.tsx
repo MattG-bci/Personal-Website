@@ -9,6 +9,7 @@ import Background from "./components/Background";
 import Projects from "./components/Projects";
 import Blog from "./components/Blog";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -29,6 +30,9 @@ function App() {
         </div>
         <div className="project-container">
           <Contact />
+        </div>
+        <div>
+          <Footer />
         </div>
       </ScrollToBottom>
     </>

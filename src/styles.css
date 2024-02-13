@@ -1,3 +1,7 @@
+html, body {
+    margin: 0px;
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -153,3 +157,61 @@
   .projects-container {
     padding-bottom: 400px;
   }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 25px;
+  }
+
+  .contact-linkedin {
+    background-color: #079ee9;
+    border-radius: 8px;
+    color: white;
+    border-style: solid;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 26px;
+    width: 125px;
+  }
+
+  .contact-github {
+    background-color: #00000000;
+    border-radius: 8px;
+    color: white;
+    border-style: solid;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 26px;
+    width: 125px;
+  }
+
+  .contact-email {
+    background-color: #00000000;
+    border-radius: 8px;
+    color: white;
+    border-style: solid;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 26px;
+    width: 125px;
+  }
+
+  .contact-cv {
+    background-color: white;
+    border-radius: 8px;
+    color: black;
+    border-style: solid;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 26px;
+    width: 125px;
+  }
+
+  .footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
