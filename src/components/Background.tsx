@@ -1,9 +1,7 @@
-import * as React from 'react';
 import "./Background.css";
 
 export default function Background() {
   return (
-
     <div className="background-container">
         <div className="header">
             <h1 className="title">Background</h1>

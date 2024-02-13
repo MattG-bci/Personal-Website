@@ -7,7 +7,8 @@ import About from "./components/About";
 import "./styles.css";
 import Background from "./components/Background";
 import Projects from "./components/Projects";
-
+import Blog from "./components/Blog";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -20,8 +21,14 @@ function App() {
         <div className="background-container">
           <Background />
         </div>
-        <div>
+        <div className="projects-container">
           <Projects />
+        </div>
+        <div className="project-container">
+          <Blog />
+        </div>
+        <div className="project-container">
+          <Contact />
         </div>
       </ScrollToBottom>
     </>
