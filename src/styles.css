@@ -164,6 +164,7 @@ html, body {
     align-items: center;
     justify-content: center;
     padding-bottom: 25px;
+    padding-top: 25px;
   }
 
   .contact-linkedin {
@@ -215,3 +216,14 @@ html, body {
     color: white;
     text-align: center;
 }
+
+  .contact-pic {
+    text-align: center;
+  }
+
+  .contact-picture {
+    display: block;
+    border-radius: 90px;
+    border: 2px solid black; /* Adjust border color and thickness */
+    margin: auto;
+  }

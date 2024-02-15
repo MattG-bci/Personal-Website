@@ -10,7 +10,7 @@ const About = () => {
             </div>
             <div className="about">
                 <div className="profile-pic">
-                    <img src="src/assets/najman.webp" height="450" width="550"></img>
+                    <img src="src/assets/profile.jpeg" height="450" width="550"></img>
                 </div>
                 <div>
                     <div className="about-description">
