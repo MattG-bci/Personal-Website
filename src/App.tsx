@@ -16,19 +16,19 @@ function App() {
     <>
       <ScrollToBottom>
         <Message />
-        <div className="about-container">
+        <div id="about-container" className="about-container">
           <About />
         </div>
-        <div className="background-container">
+        <div id="background-container" className="background-container">
           <Background />
         </div>
-        <div className="projects-container">
+        <div id="projects-container" className="projects-container">
           <Projects />
         </div>
-        <div className="project-container">
+        <div id="blog-container" className="project-container">
           <Blog />
         </div>
-        <div className="project-container">
+        <div id="contact-container" className="project-container">
           <Contact />
         </div>
         <div>
@@ -37,6 +37,6 @@ function App() {
       </ScrollToBottom>
     </>
   );
-};
+}
 
 export default App;

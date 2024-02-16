@@ -14,10 +14,16 @@ const About = () => {
                 </div>
                 <div>
                     <div className="about-description">
-                        <div className="window-border"></div>
-                        <p className="description">I am a recent MSc Applied Machine Learning gradutate from Imperial College London.</p>
-                        <p className="description">Experianced in developing machine learning algorithms for various fields ranging from medical imaging to autonomous driving.</p>
-                        <p className="description">Currently looking for remote opportunities or in London, UK.</p>
+                        <div className="window-border">
+                            <div className="window-dot-1"></div>
+                            <div className="window-dot-2"></div>
+                            <div className="window-dot-3"></div>
+                        </div>
+                        <div className="description-container">
+                            <p className="description">I am a recent MSc Applied Machine Learning gradutate from Imperial College London.</p>
+                            <p className="description">Experianced in developing machine learning algorithms for various fields ranging from medical imaging to autonomous driving.</p>
+                            <p className="description">Currently looking for remote opportunities or in London, UK.</p>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -28,6 +28,7 @@ const Contact = () => {
                 <a href="src/assets/CV.pdf" target="_blank">
                     <div className="contact-cv">CV</div>
                 </a>
+
             </div>
         </div>
     );

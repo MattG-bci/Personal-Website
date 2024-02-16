@@ -90,21 +90,54 @@ html, body {
   }
 
   .about-description {
-    border: 1px;
-    border-color: aliceblue;
-    border-style: none;
+    border: 1.5px;
+    border-color: black;
+    border-style: solid;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 1.5);
     border-radius: 8px;
     width: 600px;
     height: 350px;
   }
 
+  .description-container {
+    padding-left: 8px;
+  }
+
   .window-border {
     border: 2px solid #333; /* Adjust border color and thickness */
-    width: fit-content; /* Adjust width to fit the content */
+    width: 96%; /* Adjust width to fit the content */
     padding: 10px; /* Adjust padding */
     margin-top: -10px; /* Shift border up to cover the top of .about-description */
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
   }
+
+
+  .window-dot-1 {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: red;
+  }
+
+  .window-dot-2 {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: orange;
+  }
+
+  .window-dot-3 {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: green;
+  }
+
+  
 
   .description {
     font-size: 22px;

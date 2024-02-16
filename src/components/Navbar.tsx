@@ -1,27 +1,27 @@
 import React from "react";
-import styled from "styled-components";
-import { Link as LinkR } from "react-router-dom";
-
+import { Link } from 'react-scroll';
 
 const NavBar = () => {
-    return (
-        <div className="nav">
-          <div><h3>About</h3></div>
-          <div><h3>Background</h3></div>
-          <div><h3>Projects</h3></div>
-          <div><h3>Blog</h3></div>
-          <div><h3>Contact</h3></div>
-        </div>
-    )
+  return (
+    <div className="nav">
+      <Link to="about-container" smooth={true} duration={500}>
+        <div><h3>About</h3></div>
+      </Link>
+      <Link to="background-container" smooth={true} duration={500}>
+        <div><h3>Background</h3></div>
+      </Link>
+      <Link to="projects-container" smooth={true} duration={500}>
+        <div><h3>Projects</h3></div>
+      </Link>
+      <Link to="blog-container" smooth={true} duration={500}>
+        <div><h3>Blog</h3></div>
+      </Link>
+      <Link to="contact-container" smooth={true} duration={500}>
+        <div><h3>Contact</h3></div>
+      </Link>
+    </div>
+  );
 };
-
-const Nav = styled.nav``;
-
-const NavBarContainer = styled.div``;
-
-const NavLogo = styled(LinkR)`
-    color: #fff;
-`;
 
 export default NavBar;
 
