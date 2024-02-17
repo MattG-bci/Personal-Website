@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Overfitting from "./overfitting";
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 
 const Blog = () => {
     const [hoveredBlogs, setHoveredBlogs] = useState(Array(3).fill(false));
@@ -20,14 +22,14 @@ const Blog = () => {
           img: "src/assets/pepper.jpeg",
           title: "What is Overfitting and how to prevent it?",
           description: "Overfitting is one of the most common issues in machine learning.",
-          blogLink: "",  
+          blogLink: "./overfitting.tsx",  
         },
 
         {
             img: "src/assets/pepper.jpeg",
-            title: "Convolutional Neural Networks - visualisation.",
+            title: "Convolutional Neural Networks",
             description: "This article shows some interesting visualisations of feature maps computed by a convolutional neural network.",
-            blogLink: "",
+            blogLink: "./overfitting.tsx",
         },
     ];
 
@@ -38,7 +40,7 @@ const Blog = () => {
             </div>
             <div className="blogs-container">
                 {blogs.map((blog, index) => (
-                    <a href={blog.blogLink} target="_blank" className="link">
+                    <Link to={blog.blogLink} style={{ textDecoration: 'none', color: "inherit"}}>
                     <div
                         key={index}
                         style={{
@@ -52,7 +54,7 @@ const Blog = () => {
                         >
                         <div className="blog-content">
                             <div className="blog-img">
-                                <img src={blog.img} height="100" width="360" alt="project-img" />
+                                <img src={blog.img} height="150" width="360" alt="project-img" />
                             </div>
                             <div className="blog-container">
                                 <div className="blog-title">{blog.title}</div>
@@ -61,8 +63,10 @@ const Blog = () => {
                         </div>
                 
                     <div className="view-text">Click to view more</div>
+                    
                 </div>
-                </a>
+                </Link>
+
                 ))}
             </div>
         </div>
