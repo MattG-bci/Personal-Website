@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+
 
 const Projects = () => {
   const [hoveredProjects, setHoveredProjects] = useState(Array(3).fill(false));
@@ -17,21 +19,24 @@ const Projects = () => {
 
   const projects = [
     {
-      imgSrc: "src/assets/pepper.jpeg",
-      title: "RoboLecturer",
-      desc: "ewf",
+      imgSrc: "src/assets/clip.png",
+      title: "Frame Search API",
+      desc: "API for searching through frames and exctracting k-top matches to a text prompt.",
+      projectLink: "/components/projects/FrameSearchAPI",
     },
     
     {
       imgSrc: "src/assets/pepper.jpeg",
       title: "RoboLecturer",
-      desc: "ewf",
+      desc: "Group project on implementing a robot lecturer to teach an elemenatary-level science class.",
+      projectLink: "/components/projects/RoboLecturer",
     },
 
     {
-      imgSrc: "src/assets/pepper.jpeg",
-      title: "RoboLecturer",
-      desc: "ewf",
+      imgSrc: "src/assets/pointcloud.png",
+      title: "Scene Representation and Pre-Tagging for Autonomous Driving",
+      desc: "Master's thesis on investigation of self-supervised methods on autonomous driving data.",
+      projectLink: "/components/projects/SceneRepresentation",
     },
   ];
 
@@ -42,11 +47,12 @@ const Projects = () => {
       </div>
       <div className="projects">
         {projects.map((project, index) => (
+        <Link to={project.projectLink} style={{ textDecoration: 'none', color: "inherit"}}>          
           <div
             key={index}
             style={{
               width: hoveredProjects[index] ? '350px' : '300px',
-              height: hoveredProjects[index] ? '450px' : '400px',
+              height: hoveredProjects[index] ? '550px' : '500px',
               transition: 'all 0.2s ease-in-out',
             }}
             onMouseEnter={() => handleMouseEnter(index)}
@@ -57,9 +63,9 @@ const Projects = () => {
               <img src={project.imgSrc} height="300" width="260" alt="project-img" />
             </div>
             <div className="title">{project.title}</div>
-            <div className="desc">{project.desc}</div>
+            <div className="project-description">{project.desc}</div>
           </div>
-          
+        </Link>
         ))}
       </div>
     </div>

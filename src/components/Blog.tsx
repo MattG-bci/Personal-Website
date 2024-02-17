@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Overfitting from "./overfitting";
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import Overfitting from "./blogs/Overfitting";
+import { Link } from 'react-router-dom';
 
 const Blog = () => {
     const [hoveredBlogs, setHoveredBlogs] = useState(Array(3).fill(false));
@@ -22,14 +22,14 @@ const Blog = () => {
           img: "src/assets/pepper.jpeg",
           title: "What is Overfitting and how to prevent it?",
           description: "Overfitting is one of the most common issues in machine learning.",
-          blogLink: "./overfitting.tsx",  
+          blogLink: "/components/blogs/Overfitting",  
         },
 
         {
             img: "src/assets/pepper.jpeg",
             title: "Convolutional Neural Networks",
             description: "This article shows some interesting visualisations of feature maps computed by a convolutional neural network.",
-            blogLink: "./overfitting.tsx",
+            blogLink: "/components/blogs/FeatureMaps",
         },
     ];
 

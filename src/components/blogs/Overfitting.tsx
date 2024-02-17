@@ -2,7 +2,9 @@
 
 const Overfitting = () => {
     return (
-        <div></div>
+        <div>
+            <h1>Overfitting</h1>
+        </div>
     )
 };
 

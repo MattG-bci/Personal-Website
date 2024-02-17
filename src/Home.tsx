@@ -1,5 +1,4 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Message from "./components/Message";
 import NavBar from "./components/Navbar";
@@ -12,7 +11,6 @@ import Projects from "./components/Projects";
 import Blog from "./components/Blog";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import Overfitting from "./components/overfitting";
 
 function Home() {
   return (

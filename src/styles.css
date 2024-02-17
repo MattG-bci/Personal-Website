@@ -172,6 +172,10 @@ html, body {
     z-index: 1;
   }
 
+  .project-description {
+    padding-top: 5px;
+    color: #c5b4b4cd;
+  }
 
   .projects {
     display: flex;
