@@ -143,6 +143,9 @@ html, body {
     font-size: 22px;
   }
 
+  .project-container {
+    padding-bottom: 25%;
+  }
 
   .outer-1 {
     position: relative;
@@ -260,3 +263,57 @@ html, body {
     border: 2px solid black; /* Adjust border color and thickness */
     margin: auto;
   }
+
+  .blogs-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    
+  }
+
+  .blog-img {
+
+  }
+
+  .blog {
+    border: 2px solid grey;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .blog-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .blog-content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .blog-title {
+    border-bottom: 1px solid currentColor;
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .blog-description {
+    font-size: 18px;
+    color: #c5b4b4cd;
+  }
+
+  .view-text {
+    text-align: center;
+  }
+
+  .link {
+    color: inherit;
+    text-decoration: none;
+  }
+

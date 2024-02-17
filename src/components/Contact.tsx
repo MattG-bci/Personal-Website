@@ -16,16 +16,16 @@ const Contact = () => {
                 <img src="src/assets/profile.jpeg" className="contact-picture" height="200" width="200"></img>
             </div>
             <div className="contact-form">
-                <a href="https://www.linkedin.com/in/mfgrzybowski/" target="_blank">
+                <a href="https://www.linkedin.com/in/mfgrzybowski/" target="_blank" className="link">
                     <div className="contact-linkedin">LinkedIn</div>
                 </a>
-                <a href="https://github.com/MattG-bci" target="_blank">
+                <a href="https://github.com/MattG-bci" target="_blank" className="link">
                     <div className="contact-github">Github</div>
                 </a>
-                <a href={`mailto:${decodeEmail(obfuscatedEmail)}`}>
+                <a href={`mailto:${decodeEmail(obfuscatedEmail)}`} className="link">
                 <div className="contact-email">Email</div>
                 </a>
-                <a href="src/assets/CV.pdf" target="_blank">
+                <a href="src/assets/CV.pdf" target="_blank" className="link">
                     <div className="contact-cv">CV</div>
                 </a>
 

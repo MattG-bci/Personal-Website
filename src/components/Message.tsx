@@ -11,7 +11,7 @@ export default function TextAnimation() {
 
     return (
         <div className="outer-1">
-            <img src="src/assets/nn.gif" alt="tenor" className="gif-overlay" />
+            <img src="src/assets/coding.gif" alt="tenor" className="gif-overlay" />
             <div className="content-overlay">
             <NavBar/ >
             <Greetings onAnimationEnd={handleAnimationEnd} />

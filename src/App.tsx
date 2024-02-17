@@ -28,7 +28,7 @@ function App() {
         <div id="blog-container" className="project-container">
           <Blog />
         </div>
-        <div id="contact-container" className="project-container">
+        <div id="contact-container">
           <Contact />
         </div>
         <div>
