@@ -321,3 +321,56 @@ html, body {
     text-decoration: none;
   }
 
+
+  .keywords {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .keyword-box {
+    border: 1px solid rgb(255, 255, 255);
+    background-color: #a1a1a1e6;
+    border-radius: 10px;
+    width: 130px;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .title-article {
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    text-decoration: underline;
+  }
+
+  .abstract-article {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    font-size: 22px;
+  }
+
+  .article-section {
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .section-description {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-bottom: 20px;
+  }
