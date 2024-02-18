@@ -26,7 +26,7 @@ export default function Background() {
                     </div>
                     <div className="date">May 2020</div>
                     <div className="title">Joining SELA</div>
-                    <div className="desc">Joined Sheffield Engineering Leadership Academy (SELA), a programme for engineering students to develop soft skills such as communication and leadership.</div>
+                    <div className="desc">Enrolled in Sheffield Engineering Leadership Academy (SELA), a programme for engineering students to develop soft skills such as communication and leadership.</div>
                 </div>
             </div>
             <div className="event">
@@ -37,7 +37,7 @@ export default function Background() {
                     </div>
                     <div className="date">June 2022</div>
                     <div className="title">Internship at Insigneo Institute</div>
-                    <div className="desc">Description of Event 3 goes here.</div>
+                    <div className="desc">Started a summer internship as a Deep Learning Research Intern to work on semantic segmentation and classification of jaw lesions on panoramic radiographs.</div>
                 </div>
             </div>
             <div className="event">
@@ -47,8 +47,8 @@ export default function Background() {
                         <img src="src/assets/sheffield.jpeg" height="60" width="60" alt="Sheffield Grad"></img>
                     </div>
                     <div className="date">July 2022</div>
-                    <div className="title">Graduating with 1st Class Honours</div>
-                    <div className="desc">Description of Event 4 goes here.</div>
+                    <div className="title">Graduated University of Sheffield</div>
+                    <div className="desc">Graduated with 1st Class Honours in BEng Bioengineering.</div>
                 </div>
             </div>
             <div className="event">
@@ -59,7 +59,7 @@ export default function Background() {
                     </div>
                     <div className="date">October 2022</div>
                     <div className="title">MSc at Imperial College London</div>
-                    <div className="desc">Description of Event 4 goes here.</div>
+                    <div className="desc">Commenced master's studies in Applied Machine Learning at Imperial College London.</div>
                 </div>
             </div>
             <div className="event">
@@ -70,7 +70,7 @@ export default function Background() {
                     </div>
                     <div className="date">June 2023</div>
                     <div className="title">Internship at Fusionride</div>
-                    <div className="desc">Description of Event 4 goes here.</div>
+                    <div className="desc">Joined Fusionride as a Machine Learning Intern, working on multi-modal autonomous driving data.</div>
                 </div>
             </div>
             <div className="event">
@@ -80,8 +80,8 @@ export default function Background() {
                         <img src="src/assets/imperial.png" height="60" width="60" alt="Imperial Grad"></img>
                     </div>
                     <div className="date">October 2023</div>
-                    <div className="title">Graduating ICL with Distinction</div>
-                    <div className="desc">Description of Event 4 goes here.</div>
+                    <div className="title">Graduated Imperial College London</div>
+                    <div className="desc">Graduated MSc with Distinction. Scored 80% in disseration hence produced a publication-quality work.</div>
                 </div>
             </div>
         </div>
