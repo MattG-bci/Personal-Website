@@ -81,12 +81,33 @@ html, body {
     height: 60vh;
   }
 
+  @keyframes motion {
+    from {
+      opacity: 0;
+      bottom: -50%;
+    }
+    to {
+      opacity: 1;
+      bottom: 0px;
+    }
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .animate {
+      animation: 2s motion forwards;
+    }
+  }
+
   .profile-pic {
     border: 3px;
     border-color: rgb(0, 0, 0);
     border-style: solid;
     width: 550px;
     height: 450px;
+    opacity: 0;
+    animation: 2s motion forwards;
+    position: relative;
+    bottom: -50%;
   }
 
   .about-description {
@@ -97,6 +118,11 @@ html, body {
     border-radius: 8px;
     width: 600px;
     height: 350px;
+    background-color: black;
+    opacity: 0;
+    animation: 2s motion forwards;
+    position: relative;
+    bottom: -50%;
   }
 
   .description-container {
@@ -374,3 +400,5 @@ html, body {
     margin-right: 40px;
     padding-bottom: 20px;
   }
+
+
