@@ -1,7 +1,27 @@
 import React, { useEffect, useRef } from 'react';
 
 
-const About = () => { 
+const About = () => {
+    useEffect(() => {
+        const descriptions = document.querySelectorAll(".about-description");
+    
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              console.log("Element is in view!");
+            }
+          });
+        });
+    
+        descriptions.forEach(description => {
+          observer.observe(description);
+        });
+    
+        return () => {
+          observer.disconnect();
+        };
+      }, []);
+    
   return (
     <div>
       <div className="header">

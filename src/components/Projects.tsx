@@ -47,7 +47,7 @@ const Projects = () => {
       </div>
       <div className="projects">
         {projects.map((project, index) => (
-        <Link to={project.projectLink} style={{ textDecoration: 'none', color: "inherit"}}>          
+        <Link to={project.projectLink} style={{ textDecoration: 'none', color: "inherit"}} key={index}>          
           <div
             key={index}
             style={{

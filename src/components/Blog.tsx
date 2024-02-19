@@ -40,7 +40,7 @@ const Blog = () => {
             </div>
             <div className="blogs-container">
                 {blogs.map((blog, index) => (
-                    <Link to={blog.blogLink} style={{ textDecoration: 'none', color: "inherit"}}>
+                    <Link to={blog.blogLink} style={{ textDecoration: 'none', color: "inherit"}} key={index}>
                     <div
                         key={index}
                         style={{
