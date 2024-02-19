@@ -13,7 +13,7 @@ const Contact = () => {
                 <h1 className="title">Contact</h1>
             </div>
             <div className="contact-pic">
-                <img src="src/assets/profile.jpeg" className="contact-picture" height="200" width="200"></img>
+                <img src="src/assets/profile.jpeg" className="contact-picture" height="400" width="400"></img>
             </div>
             <div className="contact-form">
                 <a href="https://www.linkedin.com/in/mfgrzybowski/" target="_blank" className="link">

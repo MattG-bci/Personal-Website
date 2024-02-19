@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 
@@ -39,6 +39,26 @@ const Projects = () => {
       projectLink: "/components/projects/SceneRepresentation",
     },
   ];
+
+  useEffect(() => {
+    const projectDocs = document.querySelectorAll(".project");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("project-animation-media");
+        }
+      });
+    });
+    
+    projectDocs.forEach(projectDoc => {
+        observer.observe(projectDoc);
+    });
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
 
   return (
     <div>

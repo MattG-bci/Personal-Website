@@ -1,6 +1,27 @@
+import { useEffect } from "react";
 import "./Background.css";
 
 export default function Background() {
+    useEffect(() => {
+        const events = document.querySelectorAll(".event");
+    
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("event-animation-media");
+            }
+          });
+        });
+        
+        events.forEach(event => {
+            observer.observe(event);
+        });
+    
+        return () => {
+          observer.disconnect();
+        };
+      }, []);
+
   return (
     <div className="background-container">
         <div className="header">

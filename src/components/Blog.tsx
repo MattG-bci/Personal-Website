@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Overfitting from "./blogs/Overfitting";
 import { Link } from 'react-router-dom';
 
@@ -19,19 +19,39 @@ const Blog = () => {
 
     const blogs = [
         {
-          img: "src/assets/pepper.jpeg",
+          img: "src/assets/overfitting.png",
           title: "What is Overfitting and how to prevent it?",
-          description: "Overfitting is one of the most common issues in machine learning.",
+          description: "Overfitting is one of the most common issues in machine learning. In this blog, I am explaining most commonly used techniques to address this problem.",
           blogLink: "/components/blogs/Overfitting",  
         },
 
         {
-            img: "src/assets/pepper.jpeg",
+            img: "src/assets/rn50-layer2.jpg",
             title: "Convolutional Neural Networks",
             description: "This article shows some interesting visualisations of feature maps computed by a convolutional neural network.",
             blogLink: "/components/blogs/FeatureMaps",
         },
     ];
+
+    useEffect(() => {
+        const blogDocs = document.querySelectorAll(".blog");
+    
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("blog-animation-media");
+            }
+          });
+        });
+        
+        blogDocs.forEach(blogDoc => {
+            observer.observe(blogDoc);
+        });
+    
+        return () => {
+          observer.disconnect();
+        };
+      }, []);
 
     return (
         <div>
@@ -54,16 +74,25 @@ const Blog = () => {
                         >
                         <div className="blog-content">
                             <div className="blog-img">
-                                <img src={blog.img} height="150" width="360" alt="project-img" />
+                                <img 
+                                    src={blog.img}
+                                    alt="project-img" 
+                                    key={index}
+                                    style={{
+                                        width: hoveredBlogs[index] ? '300px' : '300px',
+                                        height: hoveredBlogs[index] ? '225px' : '200px',
+                                        transition: 'all 0.2s ease-in-out',
+                                    }}
+                                    onMouseEnter={() => handleMouseEnter(index)}
+                                    onMouseLeave={() => handleMouseLeave(index)}
+                                />
                             </div>
                             <div className="blog-container">
                                 <div className="blog-title">{blog.title}</div>
                                 <div className="blog-description">{blog.description}</div>
+                                <div style={{paddingTop: "40px", textAlign: "right"}}>Click to view more</div> 
                             </div>
-                        </div>
-                
-                    <div className="view-text">Click to view more</div>
-                    
+                        </div>             
                 </div>
                 </Link>
 

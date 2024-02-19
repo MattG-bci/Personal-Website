@@ -1,20 +1,23 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 
 
 const About = () => {
     useEffect(() => {
-        const descriptions = document.querySelectorAll(".about-description");
+        const description = document.querySelectorAll(".about-description");
+        const profile = document.querySelectorAll(".profile-pic");
     
         const observer = new IntersectionObserver((entries) => {
           entries.forEach(entry => {
             if (entry.isIntersecting) {
-              console.log("Element is in view!");
+              entry.target.classList.add("animate")
             }
           });
         });
-    
-        descriptions.forEach(description => {
-          observer.observe(description);
+        
+        let contents = [description, profile];
+        contents.forEach(content => {
+          content.forEach(el => {
+            observer.observe(el)});
         });
     
         return () => {
@@ -29,7 +32,7 @@ const About = () => {
       </div>
       <div className="about">
         <div className="profile-pic">
-          <img src="src/assets/profile.jpeg" height="450" width="550" alt="Profile" />
+          <img src="src/assets/profile.jpeg" height="400" width="500" alt="Profile" />
         </div>
         <div>
           <div className="about-description">
