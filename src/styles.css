@@ -389,8 +389,18 @@ html, body {
     flex-wrap: wrap;
   }
 
-  .blog-img {
+  @keyframes article-animation {
+    from {
+      opacity: 0;
+    }
 
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .article {
+    animation: 1.5s article-animation forwards;
   }
 
   .blog {
@@ -501,15 +511,15 @@ html, body {
 
   @media (prefers-reduced-motion: no-preference) {
     .link-animation-media {
-      animation: 1.5s link-animation forwards;
+      animation: 2s link-animation forwards;
     }
   }
 
   .link:nth-child(odd) {
-    transform: translateX(100%);
+    transform: translateX(200%);
   }
 
   .link:nth-child(even) {
-    transform: translateX(-100%);
+    transform: translateX(-200%);
   }
 

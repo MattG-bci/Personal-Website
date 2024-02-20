@@ -1,10 +1,20 @@
-
+import React, {useLayoutEffect} from "react";
 
 const FrameSearchAPI = () => {
+
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
+
     return (
-        <div>
+        <div className="article">
             <div className="title-article">Frame Search API</div>
-            <div><img src="" height="200" width="200"></img></div>
+            <div style={{display: "flex", justifyContent: "center", marginTop: "20px"}}>
+                <figure>
+                    <img src="/src/assets/clip.png" height="400" width="auto" />
+                    <figcaption>Figure 1: CLIP - text-image foundation model.</figcaption>
+                </figure>
+                </div>
             <div className="abstract-article">
                 <div>
                     <p>Is it possible to quickly search through highly specified image data such as autonomous driving data and extract the most relevant samples with a text prompt?</p>
@@ -25,9 +35,30 @@ const FrameSearchAPI = () => {
                 </div>
             </div>
             <div className="article-section">
-                <div className="section-title">Methodology</div>
+                <div className="section-title">Methods</div>
                 <div className="section-description">
                     <p>Methods used here are:</p>
+                
+                </div>
+            </div>
+            <div className="article-section">
+                <div className="section-title">Results and Discussion</div>
+                <div className="section-description">
+                    <p>Results used here are:</p>
+                
+                </div>
+            </div>
+            <div className="article-section">
+                <div className="section-title">Conclusions</div>
+                <div className="section-description">
+                    <p>Conclusions used here are:</p>
+                
+                </div>
+            </div>
+            <div className="article-section">
+                <div className="section-title">References</div>
+                <div className="section-description">
+                    <p>[1] - piwo</p>
                 
                 </div>
             </div>
