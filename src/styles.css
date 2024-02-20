@@ -153,6 +153,15 @@ html, body {
     }
   }
 
+  @keyframes contact-pic-animation {
+    from {
+      scale: 0;
+    }
+    to {
+      scale: 1;
+    }
+  }
+
   @media (prefers-reduced-motion: no-preference) {
     .animate {
       animation: 2s motion forwards;
@@ -164,6 +173,10 @@ html, body {
 
     .blog-animation-media {
       animation: 1s blog-animation forwards;
+    }
+
+    .contact-pic-animation-media {
+      animation: 1s contact-pic-animation forwards;
     }
   }
 
@@ -475,4 +488,28 @@ html, body {
     padding-bottom: 20px;
   }
 
+  @keyframes link-animation {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .link-animation-media {
+      animation: 1.5s link-animation forwards;
+    }
+  }
+
+  .link:nth-child(odd) {
+    transform: translateX(100%);
+  }
+
+  .link:nth-child(even) {
+    transform: translateX(-100%);
+  }
 

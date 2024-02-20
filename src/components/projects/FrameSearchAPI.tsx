@@ -4,6 +4,7 @@ const FrameSearchAPI = () => {
     return (
         <div>
             <div className="title-article">Frame Search API</div>
+            <div><img src="" height="200" width="200"></img></div>
             <div className="abstract-article">
                 <div>
                     <p>Is it possible to quickly search through highly specified image data such as autonomous driving data and extract the most relevant samples with a text prompt?</p>
