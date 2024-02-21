@@ -20,16 +20,16 @@ const Blog = () => {
     const blogs = [
         {
           img: "src/assets/overfitting.png",
-          title: "What is Overfitting and how to prevent it?",
+          title: "Navigating the Pitfalls of Overfitting: Strategies to Enhance Model Generalization",
           description: "Overfitting is one of the most common issues in machine learning. In this blog, I am explaining most commonly used techniques to address this problem.",
           blogLink: "/components/blogs/Overfitting",  
         },
 
         {
-            img: "src/assets/rn50-layer2.jpg",
-            title: "Convolutional Neural Networks",
-            description: "This article shows some interesting visualisations of feature maps computed by a convolutional neural network.",
-            blogLink: "/components/blogs/FeatureMaps",
+            img: "src/assets/data-preprocessing.png",
+            title: "The Power of Data Preprocessing",
+            description: "This article shows some rationale on why one should be interested in data preprocessing with a few tips to address it.",
+            blogLink: "/components/blogs/DataPreprocessing",
         },
     ];
 
@@ -90,7 +90,6 @@ const Blog = () => {
                             <div className="blog-container">
                                 <div className="blog-title">{blog.title}</div>
                                 <div className="blog-description">{blog.description}</div>
-                                <div style={{paddingTop: "40px", textAlign: "right"}}>Click to view more</div> 
                             </div>
                         </div>             
                 </div>

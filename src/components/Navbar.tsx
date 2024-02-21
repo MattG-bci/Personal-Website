@@ -16,7 +16,7 @@ const NavBar = () => {
       <Link to="blog-container" smooth={true} duration={500}>
         <div><h3>Blog</h3></div>
       </Link>
-      <Link to="contact-container" smooth={true} duration={500}>
+      <Link to="contact-container" smooth={false} duration={500}>
         <div><h3>Contact</h3></div>
       </Link>
     </div>
