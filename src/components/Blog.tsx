@@ -5,13 +5,13 @@ import { Link } from 'react-router-dom';
 const Blog = () => {
     const [hoveredBlogs, setHoveredBlogs] = useState(Array(3).fill(false));
 
-    const handleMouseEnter = (index) => {
+    const handleMouseEnter = (index : number) => {
         const updatedHoveredBlogs = [...hoveredBlogs];
         updatedHoveredBlogs[index] = true;
         setHoveredBlogs(updatedHoveredBlogs);
     };
 
-    const handleMouseLeave = (index) => {
+    const handleMouseLeave = (index : number) => {
         const updatedHoveredBlogs = [...hoveredBlogs];
         updatedHoveredBlogs[index] = false;
         setHoveredBlogs(updatedHoveredBlogs);

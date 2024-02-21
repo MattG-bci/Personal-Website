@@ -12,7 +12,7 @@ import DataPreprocessing from "./components/blogs/DataPreprocessing";
 export default function App() {
   return (
     <Routes >
-        <Route exact path="/" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/components">
           <Route path="/components/blogs">
             <Route path="/components/blogs/Overfitting" element={<Overfitting />}/>

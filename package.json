@@ -5,11 +5,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "predeploy": "npm run dev",
-    "deploy": "gh-pages -d dev",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "dependencies": {
     "@emotion/react": "^11.11.3",
@@ -26,6 +27,7 @@
     "react-dom": "^18.2.0",
     "react-intersection-observer": "^9.8.0",
     "react-router-dom": "^6.22.0",
+    "react-scripts": "^5.0.1",
     "react-scroll": "^1.9.0",
     "react-scroll-to-bottom": "^4.2.0",
     "react-timeless": "^0.3.1",
@@ -39,5 +41,17 @@
     "@vitejs/plugin-react": "^3.1.0",
     "typescript": "^4.9.3",
     "vite": "^4.1.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

@@ -37,7 +37,7 @@ const Wrapper = styled.span`
 `;
 
 
-const Greetings = ( {onAnimationEnd} ) => (
+const Greetings = ( {onAnimationEnd} : {onAnimationEnd: any}) => (
     <Wrapper onAnimationEnd={onAnimationEnd}><h1>Hello! 👋</h1></Wrapper>
 )
 
