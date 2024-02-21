@@ -1,12 +1,13 @@
 {
+  "homepage": "https://mattg-bci.github.io/Personal-Website/",
   "name": "website",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://mattg-bci.github.io/Personal-Website/",
-
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run dev",
+    "deploy": "gh-pages -d dev",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
@@ -19,6 +20,7 @@
     "flowbite": "^2.2.1",
     "flowbite-react": "^0.7.2",
     "framer-motion": "^11.0.5",
+    "gh-pages": "^6.1.1",
     "mui": "^0.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -32,6 +34,7 @@
   "devDependencies": {
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
+    "@types/react-scroll": "^1.8.10",
     "@types/react-scroll-to-bottom": "^4.2.4",
     "@vitejs/plugin-react": "^3.1.0",
     "typescript": "^4.9.3",
